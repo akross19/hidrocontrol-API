@@ -16,3 +16,6 @@ RewriteRule ^tinaco/([0-9]+)?$ tinaco/app.php?id=$1
 RewriteRule ^usuario/?$ usuario/app.php
 RewriteRule ^usuario/login/?$ usuario/auth.php
 RewriteRule ^usuario/([0-9]+)?$ usuario/app.php?id=$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
