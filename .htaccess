@@ -1,0 +1,18 @@
+RewriteEngine On
+
+RewriteRule ^bomba/?$ bomba/app.php
+RewriteRule ^bomba/([0-9]+)?$ bomba/app.php?id=$1
+
+RewriteRule ^consumo/?$ consumo/app.php
+RewriteRule ^consumo/registro/?$ consumo/consumo.php
+RewriteRule ^consumo/([0-9]+)?$ consumo/app.php?id=$1
+
+RewriteRule ^historial/?$ historial/app.php
+RewriteRule ^historial/([0-9]+)?$ historial/app.php?id=$1
+
+RewriteRule ^tinaco/?$ tinaco/app.php
+RewriteRule ^tinaco/([0-9]+)?$ tinaco/app.php?id=$1
+
+RewriteRule ^usuario/?$ usuario/app.php
+RewriteRule ^usuario/login/?$ usuario/auth.php
+RewriteRule ^usuario/([0-9]+)?$ usuario/app.php?id=$1
